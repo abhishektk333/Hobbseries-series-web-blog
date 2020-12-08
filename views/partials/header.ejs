@@ -7,13 +7,17 @@
 		<link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
 		<link rel="stylesheet" type="text/css"	href="/stylesheets/navbar.css">
 		<link rel="stylesheet" type="text/css"	href="/stylesheets/landing.css">
+	
+		<script src="/stylesheets/prescreen.js"></script>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
-	</head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 	<body>
 		<header class="nav-head">
-			<a href="/"><img src="https://proxy-ap-south1.goorm.io//service/5edcf52b0f4852dbe55cdf27_dcqyub1y7dLS2OsZ2mh.run-ap-south1.goorm.io/9080//file/load/kisspng-theatre-computer-icons-mask-drama-actor-5ab9c754955902.4948570315221246286117.png?path=d29ya3NwYWNlJTJGTXlibG9nJTJGcHVibGljJTJGc3R5bGVzaGVldHMlMkZraXNzcG5nLXRoZWF0cmUtY29tcHV0ZXItaWNvbnMtbWFzay1kcmFtYS1hY3Rvci01YWI5Yzc1NDk1NTkwMi40OTQ4NTcwMzE1MjIxMjQ2Mjg2MTE3LnBuZw==&docker_id=dcqyub1y7dLS2OsZ2mh&secure_session_id=XCKsZaEvpQcrS-Bd8DOT8SeramNHpZul" class="logo"></a>
+			<a href="/"><img src="/stylesheets/HobbSeries logo.png" class="logo"></a>
 		<nav>
 			<h3 href="/">hobb<span>S</span>eries</h3>
 			<ul>
@@ -24,11 +28,15 @@
 				<li><a href ="/login">Sign In</a></li>
 						<% }else{ %>
 				<a class="special">Signed in as <%= currentUser.username %></a>
-				<li><a href ="/logout">Sign Out</a></li>
+				<li><a href="/logout">Sign Out</a></li>
  							<% } %>
 			</ul>
 		</nav>
 		</header>
+		
+		<div class="preloader">
+		</div>
+		
 		
 		<div class="container1">
 			<% if(error && error.length>0){ %>

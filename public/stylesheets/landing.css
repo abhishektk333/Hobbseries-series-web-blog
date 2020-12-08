@@ -54,21 +54,26 @@ section {
 .content .textBox a{
 	display:inline-block;
 	margin-top:20px;
-	padding:8px 20px;
+	padding:8px 15px;
 	background:#fff;
 	color:#111;
 	border-radius:40px;
-	font-weight:500;
+	font-weight:700;
 	letter-spacing:1px;
 	text-decoration:none;
 	text-transform:uppercase;
 	margin-bottom:40px;
+	padding-left:20px;
+	align:center;
+}
+.content .textBox a img{
+	width:20px;
+	height:20px;
+	margin-left:6px;
+	margin-bottom:5px;
+	
 }
 
-.content .textBox a:hover{
-	background:red;
-}
-	
 .content .imgBox{
 	width:600px;
 	display:flex;
@@ -79,6 +84,7 @@ section {
 
 .content .imgBox img{
 	max-width:600px;
+	margin-bottom:40px;
 }
 	
 .thumb{
@@ -96,9 +102,22 @@ section {
 	margin:0 20px;
 	cursor:pointer;
 	transition:0.5s;
-	
+	margin-bottom:30px;
 }
 
 .thumb li:hover{
 	transform:translatey(-15px);
  }
+
+.preloader {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 9999;
+   background-image: url('/stylesheets/Preloadicon.png');
+   background-repeat: no-repeat; 
+   background-color:#1a1a1a;
+   background-position: center;
+}
