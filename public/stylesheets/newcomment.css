@@ -34,8 +34,8 @@ body{
    width: 100%;
    height: 100%;
    z-index: 9999;
-   background-image: url('/stylesheets/Preloadicon.png');
+   background-image: url('/stylesheets/prescreenload.jpg');
    background-repeat: no-repeat; 
-   background-color:#1a1a1a;
+   background-color:#000;
    background-position: center;
 }

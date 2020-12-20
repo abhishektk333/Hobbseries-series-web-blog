@@ -9,8 +9,8 @@ var userSchema = new mongoose.Schema({
     firstName: String,
     lastName: String,
     email: {type: String, unique: true, required: true},
-    resetPasswordToken: String,
-    resetPasswordExpires: Date,
+    // resetPasswordToken: String,
+    // resetPasswordExpires: Date,
 	isAdmin: {type: Boolean, default: false}
 });
 
