@@ -44,7 +44,7 @@ router.get("/login",function(req,res){
 
 router.post("/login",function(req,res){ passport.authenticate("local",
 {
-	successRedirect : "/home" ,
+	successRedirect : "/home",
 	failureRedirect : "/login",
 	failureFlash    : true,
 	successFlash    : "Successfully Logged In"
