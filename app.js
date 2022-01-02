@@ -40,30 +40,7 @@ app.use(express.urlencoded({
 }));
 app.use(express.json());
 
-// const store = new MongoDBStore({
-// 	url:dburl,
-// 	secret:'thisshouldbeabettersecret',
-// 	touchAfter: 24 * 60 * 60
-// });
 
-// store.on("error",function(err){
-// 	console.log("ERROR FOUND",err)
-// });
-
-// const sessionConfig = {
-// 	store,
-// 	name:'session',
-// 	secret:'thisshouldbeabettersecret!',
-// 	resave:false,
-// 	saveUninitialized:true,
-// 	cookie:{
-// 		httpOnly:true,
-// 		expires:Date.now() + 1000 * 60 * 60 * 24 * 7,
-// 		maxAge: 1000 * 60 * 60 * 24 * 7
-// 	}
-// }
-
-// app.use(session(sessionConfig));
 app.use(require("express-session")({
 	secret:"It is awesome",
 	resave:false,
@@ -88,31 +65,6 @@ app.use("/home/:id/comments",commentsroutes);
 app.use("/",authenroutes);
 
 
-//seedDB();
-
-// var homeSchema = new mongoose.Schema({
-// 	series:String,
-// 	image:String,
-// 	data:String
-// });
-
-// var home = mongoose.model("home",homeSchema);
-
- // home.create(  
- // {series:"Money Hiest",image:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRO9eEvf3Q1Ubaxb6gUG2XqYwQL9J66_821xg&usqp=CAU",data:"It is one of the most famous one "
-		
- // },function(err,home){
- // if(err){
- // console.log(err);
- // }else{
- // console.log(home);
- // }
- // });
-
-// app.post("/email",function(req,res){
-// 	console.log('Data: ',req.body);
-// 	res.json({message: "Message reciever!!!"})
-// 	});
 
 app.get("/contact",function(req,res){
 	res.render("contact.ejs")

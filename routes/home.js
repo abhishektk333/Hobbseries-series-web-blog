@@ -64,7 +64,6 @@ router.post("/",function(req,res){
 });
 
 
-
 router.get("/newkh41",middlewareobj.isLoggedIn,function(req,res){
 	res.render("new")
 });
